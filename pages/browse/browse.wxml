@@ -1,0 +1,39 @@
+<!--pages/browse/browse.wxml-->
+<!--Begin Search -->
+<import src="/libs/wxSearch/wxSearch.wxml"/>
+
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel">
+    <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索1" />
+    <button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">搜索</button>
+  </view>
+</view>
+<template is="wxSearch" data="{{wxSearchData}}"/>
+<!--End Search -->
+
+<view class="container">
+  <!--view class="free-panel-title">文物检索</view-->
+    <view class="free-WaterfallFlow" >
+      <!--block-->
+        <navigator open-type="navigate" class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}' url="{{item.url}}">
+          <image mode="widthFix" src="{{item.src}}" style=''></image>
+          <view style='display:inline; text-align:left;'>{{item.name}}</view>
+          <view style='display:inline;'>{{item.commend}}</view>
+          <view style='text-align:left;'>{{item.context}}</view>
+          <view style='display:inline; text-align:right;'>{{item.price}}</view>
+          <view style='display:inline; text-align:right;'>{{item.distance}}</view>
+          <!--view style=''>{{item.iscollect}}</view-->
+          <view style=''>{{item.openTime}}</view>
+        </navigator>
+      <!--/block-->
+
+      <!--navigator wx:for="{{images}}" wx:key="{{images}}" class="flex-wrap fontSize35" url="{{item.url}}">
+          <view class="text-left">{{item.name}}</view>
+          <view class="free-icon-right"></view>
+      </navigator-->
+    </view>
+    
+  <view class="indexContent">
+
+  </view>
+</view>

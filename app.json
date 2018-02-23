@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/browse/browse",
+    "pages/WaterfallFlow/WaterfallFlow_Nanjing/WaterfallFlow_Nanjing",
+    "pages/WaterfallFlow/WaterfallFlow_Beijing/WaterfallFlow_Beijing",
+    "pages/scan/scan",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "52解说",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/bar/dibiao.png",
+        "iconPath": "pages/images/bar/dibiao.png",
+        "pagePath": "pages/browse/browse",
+        "text": "导览"
+      },
+      {
+        "selectedIconPath": "pages/images/bar/saoma.png",
+        "iconPath": "pages/images/bar/saoma.png",
+        "pagePath": "pages/scan/scan",
+        "text": "扫一扫"
+      },
+      {
+        "selectedIconPath": "pages/images/bar/aixin.png",
+        "iconPath": "pages/images/bar/aixin.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+/* pages/scan.wxss */
+.photoes{
+  clear: both; 
+  display: block;  
+  margin:auto; 
+ }
+ button{
+  margin: 20rpx 0;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  line-height: 150rpx;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* bottom: 50rpx; */
+}

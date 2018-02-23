@@ -1,0 +1,16 @@
+<!--import src="../Template/Template.wxml"/-->
+<view class="container">
+  <!--view class="free-panel-title">文物检索</view-->
+    <view class="free-WaterfallFlow" >
+      <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}' >
+          <image mode="widthFix" src="{{item.src}}" style='float:left; width:96px; heigh:96px'></image>
+          <view style=''>{{item.name}}</view>
+          <view style=''>{{item.context}}</view>
+          <view style=''>{{item.from}}</view>
+          <!--view style=''>{{item.iscollect}}</view-->
+          <view style=''>{{item.datetme}}</view>
+        </view>
+      </block>
+    </view>
+</view>
