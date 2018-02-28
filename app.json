@@ -6,7 +6,8 @@
     "pages/scan/scan",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "libs/citySelector/switchcity/switchcity"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -155,6 +155,24 @@ Page({
   },
   //End Search
 
+  Postion: function () {
+    //关闭当前页面，跳转到应用内的某个页面。
+    wx.navigateTo({
+      url: '../../libs/citySelector/switchcity/switchcity',
+      success: function (res) {
+        // success
+        console.log(成功);
+      },
+      fail: function () {
+        // fail
+        console.log('sksdfksjfksjf');
+      },
+      complete: function () {
+        // complete 
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
